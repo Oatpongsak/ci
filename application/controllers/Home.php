@@ -10,14 +10,8 @@ class Home extends  CI_Controller
 
 {
     public function index(){
-        echo "Hello";
-    }
-    public function test($name = "My Test", $lastname = "Najaa"){
-        echo "My name is :" . $name ." ".$lastname;
+        $this ->load->view ('Home_views');
 
-    }
-    public function calcculator($a,$d){
-        print "=" .($a + $d) ;
 }
 
 
